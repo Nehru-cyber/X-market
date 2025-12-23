@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 - Page Not Found | X-Market</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-dark);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-page::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 70%, rgba(236, 72, 153, 0.15) 0%, transparent 50%);
+            animation: bgFloat 10s ease-in-out infinite;
+        }
+        
+        @keyframes bgFloat {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-5%, -5%); }
+        }
+        
+        .error-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+        }
+        
+        .error-code {
+            font-size: clamp(120px, 20vw, 200px);
+            font-weight: 800;
+            background: linear-gradient(135deg, #6366f1, #ec4899, #6366f1);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease infinite;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .error-robot {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+        
+        .robot-sad {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 30px 30px 20px 20px;
+            position: relative;
+            animation: robotBob 2s ease-in-out infinite;
+        }
+        
+        @keyframes robotBob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .robot-sad::before,
+        .robot-sad::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: white;
+            border-radius: 50%;
+            top: 40px;
+        }
+        
+        .robot-sad::before {
+            left: 30px;
+        }
+        
+        .robot-sad::after {
+            right: 30px;
+        }
+        
+        .robot-mouth {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 25px;
+            border: 4px solid white;
+            border-radius: 0 0 50px 50px;
+            border-top: none;
+        }
+        
+        .robot-antenna {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 25px;
+            background: #6366f1;
+            border-radius: 3px;
+        }
+        
+        .robot-antenna::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: #ec4899;
+            border-radius: 50%;
+            animation: antennaPulse 1s ease-in-out infinite;
+        }
+        
+        @keyframes antennaPulse {
+            0%, 100% { box-shadow: 0 0 10px #ec4899; }
+            50% { box-shadow: 0 0 25px #ec4899, 0 0 40px #ec4899; }
+        }
+        
+        .error-title {
+            font-size: clamp(24px, 5vw, 36px);
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .error-message {
+            font-size: clamp(16px, 3vw, 18px);
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .error-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .error-btn-primary {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+        
+        .error-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+        }
+        
+        .error-btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .error-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .error-links {
+            margin-top: 50px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .error-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        .error-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-robot">
+                <div class="robot-sad">
+                    <div class="robot-antenna"></div>
+                    <div class="robot-mouth"></div>
+                </div>
+            </div>
+            
+            <div class="error-code">404</div>
+            
+            <h1 class="error-title">Oops! Page Not Found</h1>
+            
+            <p class="error-message">
+                The page you're looking for seems to have wandered off. 
+                Don't worry, our robot is searching for it!
+            </p>
+            
+            <div class="error-actions">
+                <a href="index.html" class="error-btn error-btn-primary">
+                    <i class="fas fa-home"></i>
+                    Back to Home
+                </a>
+                <a href="pages/products.html" class="error-btn error-btn-secondary">
+                    <i class="fas fa-shopping-bag"></i>
+                    Browse Products
+                </a>
+            </div>
+            
+            <div class="error-links">
+                <a href="pages/contact.html">Contact Support</a>
+                <a href="pages/about.html">About Us</a>
+                <a href="pages/products.html">All Products</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
