@@ -154,13 +154,16 @@
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 3rem;
 }
 
 .team-card {
+    width: 100%;
+    max-width: 300px;
     background: #fff;
     border-radius: 1.5rem;
     overflow: hidden;

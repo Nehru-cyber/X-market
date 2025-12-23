@@ -68,7 +68,7 @@ const Landing = () => {
 
             {/* Signature */}
             <div className="signature">
-                Created by <span>NP</span>
+                Created by <span>Nehru Prasad</span>
             </div>
 
             {/* Page Transition */}

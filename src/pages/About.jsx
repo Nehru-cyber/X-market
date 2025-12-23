@@ -76,21 +76,21 @@ const About = () => {
                     <div className="container">
                         <h2 className="section-title text-center">Meet the Team</h2>
                         <div className="team-grid">
-                            {[1, 2, 3, 4].map(idx => (
-                                <div key={idx} className="team-card card-3d">
-                                    <div className="team-image">
-                                        <img src={`https://images.unsplash.com/photo-${1500000000000 + idx * 1000}?w=400`} alt="Team Member" />
-                                    </div>
-                                    <div className="team-info">
-                                        <h3>John Doe</h3>
-                                        <p>Co-Founder</p>
-                                        <div className="team-social">
-                                            <a href="#"><i className="fab fa-twitter"></i></a>
-                                            <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                                        </div>
+                            <div className="team-card card-3d">
+                                <div className="team-image">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Nehru Prasad" />
+                                </div>
+                                <div className="team-info">
+                                    <h3>Nehru Prasad</h3>
+                                    <p>Co-Founder & CEO</p>
+                                    <p className="team-bio">The visionary behind X-Market, dedicated to creating the ultimate shopping experience.</p>
+                                    <div className="team-social">
+                                        <a href="#"><i className="fab fa-twitter"></i></a>
+                                        <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                                        <a href="#"><i className="fab fa-github"></i></a>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
                         </div>
                     </div>
                 </section>
