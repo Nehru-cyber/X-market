@@ -1,6 +1,7 @@
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import './About.css';
+import nehruProfile from '../assets/nehru-profile.png';
 
 const About = () => {
     return (
@@ -78,7 +79,7 @@ const About = () => {
                         <div className="team-grid">
                             <div className="team-card card-3d">
                                 <div className="team-image">
-                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Nehru Prasad" />
+                                    <img src={nehruProfile} alt="Nehru Prasad" />
                                 </div>
                                 <div className="team-info">
                                     <h3>Nehru Prasad</h3>
