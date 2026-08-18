@@ -10,6 +10,32 @@ const Home = () => {
     const [activeTab, setActiveTab] = useState('all');
     const [displayedProducts, setDisplayedProducts] = useState([]);
     const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const heroSlides = [
+        {
+            title: "Premium Classic T-Shirt",
+            price: "₹1499",
+            image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+        },
+        {
+            title: "Urban Streetwear Tee",
+            price: "₹1999",
+            image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400"
+        },
+        {
+            title: "Essential Graphic Shirt",
+            price: "₹1299",
+            image: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=400"
+        }
+    ];
+
+    useEffect(() => {
+        const slideTimer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+        }, 3000);
+        return () => clearInterval(slideTimer);
+    }, []);
 
     useEffect(() => {
         filterProducts(activeTab);
@@ -56,12 +82,12 @@ const Home = () => {
     };
 
     const categories = [
-        { name: 'Electronics', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400', count: '500+' },
-        { name: 'Fashion', image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400', count: '1000+' },
-        { name: 'Home & Living', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400', count: '800+' },
-        { name: 'Sports', image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400', count: '400+' },
-        { name: 'Beauty', image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400', count: '600+' },
-        { name: 'Books', image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400', count: '2000+' }
+        { name: 'T-Shirts', image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400', count: '100+' },
+        { name: 'Pants', image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400', count: '80+' },
+        { name: 'Hoodies', image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400', count: '50+' },
+        { name: 'Socks', image: 'https://images.unsplash.com/photo-1582966772680-860e372bb558?w=400', count: '200+' },
+        { name: 'Sweatshirts', image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400', count: '60+' },
+        { name: 'Tights', image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400', count: '40+' }
     ];
 
     return (
@@ -83,7 +109,7 @@ const Home = () => {
                     <div className="hero-text">
                         <h1 className="hero-title">
                             <span className="title-line">Welcome to</span>
-                            <span className="title-line highlight">X-Market</span>
+                            <span className="title-line highlight">Cat-z</span>
                         </h1>
                         <p className="hero-subtitle">Discover Premium Products with Immersive 3D Shopping Experience</p>
                         <div className="hero-buttons">
@@ -100,10 +126,10 @@ const Home = () => {
                     <div className="hero-3d-showcase">
                         <div className="product-carousel-3d">
                             <div className="product-card-3d">
-                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Smartphone" />
+                                <img src={heroSlides[currentSlide].image} alt={heroSlides[currentSlide].title} />
                                 <div className="product-info">
-                                    <h3>Premium Smartphone</h3>
-                                    <p className="price">$999</p>
+                                    <h3>{heroSlides[currentSlide].title}</h3>
+                                    <p className="price">{heroSlides[currentSlide].price}</p>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +144,7 @@ const Home = () => {
                         <div className="feature-card feature-3d">
                             <div className="feature-icon"><i className="fas fa-shipping-fast"></i></div>
                             <h3>Free Shipping</h3>
-                            <p>Free shipping on orders over $50</p>
+                            <p>Free shipping on orders over ₹2000</p>
                         </div>
                         <div className="feature-card feature-3d">
                             <div className="feature-icon"><i className="fas fa-undo"></i></div>

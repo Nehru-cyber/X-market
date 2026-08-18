@@ -1,7 +1,7 @@
 /* Checkout Page Styles */
 .checkout-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .checkout-main {
@@ -19,7 +19,7 @@
 .page-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -67,7 +67,7 @@
 }
 
 .checkout-form {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -76,14 +76,14 @@
 .form-section h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 1.5rem;
 }
 
 .checkout-form input {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.75rem;
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -109,7 +109,7 @@
 .payment-option {
     flex: 1;
     padding: 1rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.75rem;
     cursor: pointer;
     display: flex;
@@ -155,8 +155,8 @@
 }
 
 .btn-secondary {
-    background: #f3f4f6;
-    color: #374151;
+    background: #334155;
+    color: #e5e7eb;
     border: none;
 }
 
@@ -183,7 +183,7 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #374151;
 }
 
 .review-item img {
@@ -196,7 +196,7 @@
 .review-item h4 {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .review-item p {
@@ -207,11 +207,11 @@
 .review-item span {
     margin-left: auto;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .order-summary {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     padding: 2rem;
     height: fit-content;
@@ -221,7 +221,7 @@
 .order-summary h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 1.5rem;
 }
 
@@ -229,15 +229,15 @@
     display: flex;
     justify-content: space-between;
     padding: 0.75rem 0;
-    border-bottom: 1px solid #e5e7eb;
-    color: #4b5563;
+    border-bottom: 1px solid #374151;
+    color: #d1d5db;
 }
 
 .summary-row.total {
     border-bottom: none;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-top: 0.5rem;
 }
 
@@ -260,7 +260,7 @@
 
 .success-content h2 {
     font-size: 2rem;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.75rem;
 }
 

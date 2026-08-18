@@ -25,8 +25,8 @@ const Cart = () => {
     }
 
     const subtotal = getCartTotal();
-    const shipping = subtotal > 50 ? 0 : 9.99;
-    const tax = subtotal * 0.08;
+    const shipping = subtotal > 2000 ? 0 : 199;
+    const tax = subtotal * 0.18; // 18% GST typical for clothes
     const total = subtotal + shipping + tax;
 
     return (
@@ -45,14 +45,14 @@ const Cart = () => {
                                     <div className="item-details">
                                         <Link to={`/product/${item.id}`} className="item-name">{item.name}</Link>
                                         <span className="item-brand">{item.brand}</span>
-                                        <span className="item-price">${item.price.toLocaleString()}</span>
+                                        <span className="item-price">₹{item.price.toLocaleString('en-IN')}</span>
                                     </div>
                                     <div className="item-quantity">
                                         <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
                                         <span>{item.quantity}</span>
                                         <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
                                     </div>
-                                    <div className="item-total">${(item.price * item.quantity).toLocaleString()}</div>
+                                    <div className="item-total">₹{(item.price * item.quantity).toLocaleString('en-IN')}</div>
                                     <button className="remove-btn" onClick={() => removeFromCart(item.id)}>
                                         <i className="fas fa-trash-alt"></i>
                                     </button>
@@ -62,10 +62,10 @@ const Cart = () => {
                         </div>
                         <div className="cart-summary">
                             <h2>Order Summary</h2>
-                            <div className="summary-row"><span>Subtotal</span><span>${subtotal.toFixed(2)}</span></div>
-                            <div className="summary-row"><span>Shipping</span><span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span></div>
-                            <div className="summary-row"><span>Tax (8%)</span><span>${tax.toFixed(2)}</span></div>
-                            <div className="summary-row total"><span>Total</span><span>${total.toFixed(2)}</span></div>
+                            <div className="summary-row"><span>Subtotal</span><span>₹{subtotal.toFixed(2)}</span></div>
+                            <div className="summary-row"><span>Shipping</span><span>{shipping === 0 ? 'FREE' : `₹${shipping.toFixed(2)}`}</span></div>
+                            <div className="summary-row"><span>Tax (18% GST)</span><span>₹{tax.toFixed(2)}</span></div>
+                            <div className="summary-row total"><span>Total</span><span>₹{total.toFixed(2)}</span></div>
                             <Link to="/checkout" className="btn btn-primary checkout-btn">Proceed to Checkout</Link>
                             <Link to="/products" className="continue-shopping">Continue Shopping</Link>
                         </div>

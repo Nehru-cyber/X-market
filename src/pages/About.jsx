@@ -12,7 +12,7 @@ const About = () => {
                 <section className="about-hero">
                     <div className="container">
                         <div className="about-hero-content">
-                            <h1>About X-Market</h1>
+                            <h1>About Cat-z</h1>
                             <p>Revolutionizing the online shopping experience with immersive technology and premium products.</p>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const About = () => {
                             </div>
                             <div className="story-text">
                                 <h2>Our Story</h2>
-                                <p>Founded in 2024, X-Market started with a simple vision: to bridge the gap between digital convenience and physical retail experience. We believe that shopping online shouldn't just be about utility—it should be an experience.</p>
+                                <p>Founded in 2024, Cat-z started with a simple vision: to bridge the gap between digital convenience and physical retail experience. We believe that shopping online shouldn't just be about utility—it should be an experience.</p>
                                 <p>Our team of passionate developers, designers, and retail experts worked together to create a platform that uses modern web technologies to bring products to life right on your screen.</p>
                                 <div className="stats-grid">
                                     <div className="stat-item">
@@ -84,7 +84,7 @@ const About = () => {
                                 <div className="team-info">
                                     <h3>Nehru Prasad</h3>
                                     <p>Co-Founder & CEO</p>
-                                    <p className="team-bio">The visionary behind X-Market, dedicated to creating the ultimate shopping experience.</p>
+                                    <p className="team-bio">The visionary behind Cat-z, dedicated to creating the ultimate shopping experience.</p>
                                     <div className="team-social">
                                         <a href="#"><i className="fab fa-twitter"></i></a>
                                         <a href="#"><i className="fab fa-linkedin-in"></i></a>

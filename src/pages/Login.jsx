@@ -38,7 +38,7 @@ const Login = () => {
                 <div className="auth-container card-3d">
                     <div className="auth-header">
                         <h2>Welcome Back</h2>
-                        <p>Sign in to continue to X-Market</p>
+                        <p>Sign in to continue to Cat-z</p>
                     </div>
 
                     {error && <div className="auth-error">{error}</div>}

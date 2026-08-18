@@ -1,6 +1,6 @@
 /* Product Card Styles */
 .product-card {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.1), 0 2px 6px -2px rgba(0, 0, 0, 0.08);
@@ -23,7 +23,7 @@
     position: relative;
     height: 280px;
     overflow: hidden;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .product-image img {
@@ -71,7 +71,7 @@
 
 .badge-bestseller {
     background: linear-gradient(135deg, #f59e0b, #fbbf24);
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .product-actions {
@@ -94,12 +94,12 @@
 .action-btn {
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: #1e293b;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #374151;
+    color: #e5e7eb;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: none;
@@ -133,7 +133,7 @@
 .product-name {
     font-size: 1rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin: 8px 0;
     line-height: 1.4;
     display: -webkit-box;
@@ -170,7 +170,7 @@
 .current-price {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .original-price {

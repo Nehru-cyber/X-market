@@ -1,7 +1,7 @@
 /* Auth Pages Styles (Login/Register) */
 .auth-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .auth-main {
@@ -14,7 +14,7 @@
 }
 
 .auth-container {
-    background: #fff;
+    background: #1e293b;
     width: 100%;
     max-width: 480px;
     padding: 2.5rem;
@@ -31,7 +31,7 @@
 .auth-header h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.5rem;
 }
 
@@ -59,7 +59,7 @@
     display: block;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #374151;
+    color: #e5e7eb;
     margin-bottom: 0.5rem;
 }
 
@@ -76,17 +76,28 @@
     font-size: 1rem;
 }
 
-.input-wrapper input {
+.auth-form .form-group .input-wrapper input {
     width: 100%;
-    padding: 0.75rem 1rem 0.75rem 2.75rem;
-    border: 2px solid #e5e7eb;
+    padding: 0.75rem 1rem 0.75rem 3rem !important;
+    background: #0f172a;
+    color: #f3f4f6;
+    border: 2px solid #374151;
     border-radius: 0.75rem;
     font-size: 1rem;
     outline: none;
     transition: 0.2s;
 }
 
-.input-wrapper input:focus {
+.auth-form .form-group .input-wrapper input:-webkit-autofill,
+.auth-form .form-group .input-wrapper input:-webkit-autofill:hover, 
+.auth-form .form-group .input-wrapper input:-webkit-autofill:focus, 
+.auth-form .form-group .input-wrapper input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #0f172a inset !important;
+    -webkit-text-fill-color: #f3f4f6 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.auth-form .form-group .input-wrapper input:focus {
     border-color: #6366f1;
 }
 
@@ -103,7 +114,7 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    color: #4b5563;
+    color: #d1d5db;
 }
 
 .forgot-password {
@@ -141,7 +152,7 @@
 
 .auth-divider span {
     position: relative;
-    background: #fff;
+    background: #1e293b;
     padding: 0 1rem;
     color: #9ca3af;
     font-size: 0.875rem;
@@ -160,16 +171,16 @@
     justify-content: center;
     gap: 0.5rem;
     padding: 0.75rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.75rem;
-    background: #fff;
+    background: #1e293b;
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .social-btn:hover {
-    background: #f9fafb;
+    background: #0f172a;
     border-color: #d1d5db;
 }
 
@@ -184,7 +195,7 @@
 .auth-footer {
     text-align: center;
     font-size: 0.95rem;
-    color: #4b5563;
+    color: #d1d5db;
 }
 
 .auth-footer a {

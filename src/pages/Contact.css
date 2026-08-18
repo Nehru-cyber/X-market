@@ -1,7 +1,7 @@
 /* Contact Page Styles */
 .contact-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .contact-main {
@@ -11,7 +11,7 @@
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -123,7 +123,7 @@
 
 /* Contact Form */
 .contact-form {
-    background: #fff;
+    background: #1e293b;
     padding: 3rem;
     border-radius: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -142,7 +142,7 @@
 .form-group label {
     display: block;
     font-weight: 600;
-    color: #374151;
+    color: #e5e7eb;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
@@ -151,12 +151,27 @@
 .form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.75rem;
+    background: #0f172a;
+    color: #f3f4f6;
     font-size: 1rem;
     outline: none;
     transition: 0.2s;
     font-family: inherit;
+}
+
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover, 
+.form-group input:-webkit-autofill:focus, 
+.form-group input:-webkit-autofill:active,
+.form-group textarea:-webkit-autofill,
+.form-group textarea:-webkit-autofill:hover,
+.form-group textarea:-webkit-autofill:focus,
+.form-group textarea:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #0f172a inset !important;
+    -webkit-text-fill-color: #f3f4f6 !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .form-group input:focus,

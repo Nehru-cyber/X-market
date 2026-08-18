@@ -50,7 +50,7 @@ const Wishlist = () => {
                                 </Link>
                                 <div className="item-details">
                                     <Link to={`/product/${product.id}`} className="item-name">{product.name}</Link>
-                                    <span className="item-price">${product.price.toLocaleString()}</span>
+                                    <span className="item-price">₹{product.price.toLocaleString('en-IN')}</span>
                                     <p className="item-stock">
                                         {product.stock > 0 ?
                                             <span className="in-stock"><i className="fas fa-check"></i> In Stock</span> :

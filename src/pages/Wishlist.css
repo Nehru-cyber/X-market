@@ -1,7 +1,7 @@
 /* Wishlist Page Styles */
 .wishlist-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .wishlist-main {
@@ -26,7 +26,7 @@
 .page-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .clear-btn {
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: #1e293b;
 }
 
 .empty-content {
@@ -62,7 +62,7 @@
 
 .empty-content h2 {
     font-size: 1.75rem;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.75rem;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .wishlist-item {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -99,7 +99,7 @@
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 1rem;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .item-image img {
@@ -134,7 +134,7 @@
 .item-name {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     text-decoration: none;
     display: -webkit-box;
     -webkit-line-clamp: 2;

@@ -1,7 +1,7 @@
 /* About Page Styles */
 .about-page {
     min-height: 100vh;
-    background: #fff;
+    background: #1e293b;
 }
 
 .about-main {
@@ -10,7 +10,7 @@
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -63,7 +63,7 @@
 
 .story-text h2 {
     font-size: 2.5rem;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 1.5rem;
 }
 
@@ -89,14 +89,14 @@
 }
 
 .stat-item p {
-    color: #4b5563;
+    color: #d1d5db;
     font-weight: 500;
 }
 
 /* Values */
 .values-section {
     padding: 4rem 0;
-    background: #f9fafb;
+    background: #0f172a;
     margin-top: 4rem;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .value-card {
-    background: #fff;
+    background: #1e293b;
     padding: 2.5rem;
     border-radius: 1.5rem;
     text-align: center;
@@ -140,7 +140,7 @@
 .value-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.75rem;
 }
 
@@ -164,7 +164,7 @@
 .team-card {
     width: 100%;
     max-width: 300px;
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -194,7 +194,7 @@
 .team-info h3 {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .team-info p {

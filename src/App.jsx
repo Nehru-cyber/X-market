@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { CartProvider } from './context/CartContext';
 import { WishlistProvider } from './context/WishlistContext';
 import { AuthProvider } from './context/AuthContext';
@@ -16,12 +17,49 @@ import Wishlist from './pages/Wishlist';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
+const GlobalParticles = () => {
+    const [particles, setParticles] = useState([]);
+
+    useEffect(() => {
+        const count = window.innerWidth < 768 ? 50 : 150;
+        const newParticles = [];
+        for (let i = 0; i < count; i++) {
+            newParticles.push({
+                id: i,
+                left: Math.random() * 100 + '%',
+                animationDelay: Math.random() * 8 + 's',
+                animationDuration: (Math.random() * 4 + 6) + 's',
+                isBlack: Math.random() > 0.5
+            });
+        }
+        setParticles(newParticles);
+    }, []);
+
+    return (
+        <div className="page-animations">
+            {particles.map(p => (
+                <div 
+                    key={p.id} 
+                    className={`global-particle ${p.isBlack ? 'particle-black' : 'particle-white'}`}
+                    style={{
+                        left: p.left,
+                        animationDelay: p.animationDelay,
+                        animationDuration: p.animationDuration
+                    }}
+                ></div>
+            ))}
+        </div>
+    );
+};
+
 function App() {
     return (
         <AuthProvider>
             <CartProvider>
                 <WishlistProvider>
                     <Router>
+                        {/* Global Background Animations */}
+                        <GlobalParticles />
                         <Routes>
                             <Route path="/" element={<Landing />} />
                             <Route path="/store" element={<Home />} />

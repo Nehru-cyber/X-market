@@ -1,7 +1,7 @@
 /* Product Detail Page Styles */
 .product-detail-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .product-detail-main {
@@ -39,7 +39,7 @@
 }
 
 .breadcrumb span {
-    color: #1f2937;
+    color: #f3f4f6;
     font-weight: 500;
 }
 
@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    background: #fff;
+    background: #1e293b;
     border-radius: 2rem;
     padding: 3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -57,7 +57,7 @@
     position: relative;
     border-radius: 1.5rem;
     overflow: hidden;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .main-image img {
@@ -88,7 +88,7 @@
 .product-info .product-name {
     font-size: 2rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin: 0.5rem 0 1rem;
 }
 
@@ -107,7 +107,7 @@
 
 .product-rating .rating-text {
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .product-rating .reviews {
@@ -125,7 +125,7 @@
 .current-price {
     font-size: 2rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .original-price {
@@ -135,7 +135,7 @@
 }
 
 .product-description {
-    color: #4b5563;
+    color: #d1d5db;
     line-height: 1.7;
     margin-bottom: 2rem;
 }
@@ -145,7 +145,7 @@
 .product-quantity h4 {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.75rem;
 }
 
@@ -178,9 +178,9 @@
 
 .size-btn {
     padding: 0.75rem 1.5rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.5rem;
-    background: #fff;
+    background: #1e293b;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.2s;
@@ -201,9 +201,9 @@
 .quantity-selector button {
     width: 40px;
     height: 40px;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.5rem;
-    background: #fff;
+    background: #1e293b;
     font-size: 1.25rem;
     cursor: pointer;
     transition: all 0.2s;
@@ -252,9 +252,9 @@
 .wishlist-btn {
     width: 60px;
     height: 60px;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 1rem;
-    background: #fff;
+    background: #1e293b;
     font-size: 1.25rem;
     color: #6b7280;
     cursor: pointer;
@@ -274,7 +274,7 @@
 }
 
 .product-meta p {
-    color: #4b5563;
+    color: #d1d5db;
     margin-bottom: 0.5rem;
 }
 

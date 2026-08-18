@@ -1,7 +1,7 @@
 /* Products Page Styles */
 .products-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .products-main {
@@ -11,7 +11,7 @@
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -28,7 +28,7 @@
 .products-title h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .product-count {
@@ -50,11 +50,11 @@
 
 .products-sort select {
     padding: 0.75rem 1.5rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.75rem;
-    background: #fff;
+    background: #1e293b;
     font-size: 0.95rem;
-    color: #374151;
+    color: #e5e7eb;
     cursor: pointer;
     outline: none;
 }
@@ -65,13 +65,13 @@
 
 .products-layout {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
 /* Filters Sidebar */
 .products-filters {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     padding: 1.5rem;
     height: fit-content;
@@ -91,7 +91,7 @@
 .filter-section h3 {
     font-size: 1rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 1rem;
     padding-bottom: 0.75rem;
     border-bottom: 2px solid #6366f1;
@@ -110,7 +110,7 @@
 .filter-list a {
     display: block;
     padding: 0.5rem 0.75rem;
-    color: #4b5563;
+    color: #d1d5db;
     text-decoration: none;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
@@ -131,7 +131,7 @@
 .price-inputs input {
     flex: 1;
     padding: 0.75rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.5rem;
     font-size: 0.9rem;
     outline: none;
@@ -153,9 +153,9 @@
 
 .filter-chip {
     padding: 0.5rem 1rem;
-    background: #f3f4f6;
+    background: #334155;
     border-radius: 2rem;
-    color: #4b5563;
+    color: #d1d5db;
     text-decoration: none;
     font-size: 0.875rem;
     transition: all 0.2s ease;
@@ -174,14 +174,14 @@
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
 .no-products {
     text-align: center;
     padding: 4rem;
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
 }
 
@@ -193,7 +193,7 @@
 
 .no-products h3 {
     font-size: 1.5rem;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.5rem;
 }
 

@@ -48,7 +48,7 @@ const Landing = () => {
 
                 {/* Brand Name */}
                 <div className="brand-text">
-                    <h1 className="brand-name">X-MARKET</h1>
+                    <h1 className="brand-name">CAT-Z</h1>
                 </div>
 
                 {/* Tagline */}

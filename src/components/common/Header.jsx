@@ -31,11 +31,12 @@ const Header = () => {
     };
 
     return (
+        <>
         <header className={`header-3d ${isScrolled ? 'scrolled' : ''}`}>
             <nav className="navbar">
                 <div className="nav-container">
                     <Link to="/store" className="logo">
-                        <span className="logo-3d">X</span>-Market
+                        <span className="logo-3d">Cat-z</span>
                     </Link>
 
                     <div className="search-container">
@@ -58,32 +59,30 @@ const Header = () => {
                             <div className="dropdown-menu mega-menu">
                                 <div className="mega-menu-content">
                                     <div className="mega-column">
-                                        <h4>Electronics</h4>
-                                        <Link to="/products?category=Electronics&sub=Smartphones" onClick={closeMobileMenu}>Smartphones</Link>
-                                        <Link to="/products?category=Electronics&sub=Laptops" onClick={closeMobileMenu}>Laptops</Link>
-                                        <Link to="/products?category=Electronics&sub=Audio" onClick={closeMobileMenu}>Audio</Link>
-                                        <Link to="/products?category=Electronics&sub=Smartwatches" onClick={closeMobileMenu}>Smartwatches</Link>
+                                        <h4>Men's Wear</h4>
+                                        <Link to="/products?category=Fashion&sub=T-Shirts" onClick={closeMobileMenu}>T-Shirts</Link>
+                                        <Link to="/products?category=Fashion&sub=Pants" onClick={closeMobileMenu}>Pants</Link>
+                                        <Link to="/products?category=Fashion&sub=Hoodies" onClick={closeMobileMenu}>Hoodies</Link>
+                                        <Link to="/products?category=Fashion&sub=Sweatshirts" onClick={closeMobileMenu}>Sweatshirts</Link>
                                     </div>
                                     <div className="mega-column">
-                                        <h4>Fashion</h4>
-                                        <Link to="/products?category=Fashion&sub=Men" onClick={closeMobileMenu}>Men's Wear</Link>
-                                        <Link to="/products?category=Fashion&sub=Women" onClick={closeMobileMenu}>Women's Wear</Link>
-                                        <Link to="/products?category=Fashion&sub=Footwear" onClick={closeMobileMenu}>Footwear</Link>
-                                        <Link to="/products?category=Fashion&sub=Accessories" onClick={closeMobileMenu}>Accessories</Link>
+                                        <h4>Women's Wear</h4>
+                                        <Link to="/products?category=Fashion&sub=Tights" onClick={closeMobileMenu}>Tights</Link>
+                                        <Link to="/products?category=Fashion&sub=T-Shirts" onClick={closeMobileMenu}>T-Shirts</Link>
+                                        <Link to="/products?category=Fashion&sub=Hoodies" onClick={closeMobileMenu}>Hoodies</Link>
+                                        <Link to="/products?category=Fashion&sub=Pants" onClick={closeMobileMenu}>Pants</Link>
                                     </div>
                                     <div className="mega-column">
-                                        <h4>Home & Living</h4>
-                                        <Link to="/products?category=Home" onClick={closeMobileMenu}>Furniture</Link>
-                                        <Link to="/products?category=Home" onClick={closeMobileMenu}>Home Decor</Link>
-                                        <Link to="/products?category=Home" onClick={closeMobileMenu}>Kitchen</Link>
-                                        <Link to="/products?category=Home" onClick={closeMobileMenu}>Garden</Link>
+                                        <h4>Accessories</h4>
+                                        <Link to="/products?category=Fashion&sub=Socks" onClick={closeMobileMenu}>Socks</Link>
+                                        <Link to="/products?category=Fashion&sub=Caps" onClick={closeMobileMenu}>Caps</Link>
+                                        <Link to="/products?category=Fashion&sub=Bags" onClick={closeMobileMenu}>Bags</Link>
                                     </div>
                                     <div className="mega-column">
-                                        <h4>Sports & Outdoors</h4>
-                                        <Link to="/products?category=Sports" onClick={closeMobileMenu}>Fitness</Link>
-                                        <Link to="/products?category=Sports" onClick={closeMobileMenu}>Sports Equipment</Link>
-                                        <Link to="/products?category=Sports" onClick={closeMobileMenu}>Outdoor Gear</Link>
-                                        <Link to="/products?category=Sports" onClick={closeMobileMenu}>Cycling</Link>
+                                        <h4>Collections</h4>
+                                        <Link to="/products?filter=new" onClick={closeMobileMenu}>New Arrivals</Link>
+                                        <Link to="/products?filter=bestseller" onClick={closeMobileMenu}>Best Sellers</Link>
+                                        <Link to="/products?filter=sale" onClick={closeMobileMenu}>On Sale</Link>
                                     </div>
                                 </div>
                             </div>
@@ -140,6 +139,30 @@ const Header = () => {
                 </div>
             </nav>
         </header>
+
+        {/* Mobile Bottom Navigation */}
+        <div className="mobile-bottom-nav">
+            <Link to="/store" className={`mobile-nav-btn ${location.pathname === '/store' ? 'active' : ''}`} onClick={closeMobileMenu}>
+                <i className="fas fa-home"></i>
+                <span>Home</span>
+            </Link>
+            <Link to="/cart" className={`mobile-nav-btn ${location.pathname === '/cart' ? 'active' : ''}`} onClick={closeMobileMenu}>
+                <div className="mobile-icon-wrapper">
+                    <i className="fas fa-shopping-cart"></i>
+                    {getCartCount() > 0 && <span className="mobile-badge">{getCartCount()}</span>}
+                </div>
+                <span>Cart</span>
+            </Link>
+            <Link to={isAuthenticated ? "/profile" : "/login"} className={`mobile-nav-btn ${location.pathname === '/profile' || location.pathname === '/login' ? 'active' : ''}`} onClick={closeMobileMenu}>
+                <i className="fas fa-user"></i>
+                <span>Profile</span>
+            </Link>
+            <button className={`mobile-nav-btn ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                <span>Menu</span>
+            </button>
+        </div>
+        </>
     );
 };
 

@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-grid">
                         <div className="footer-col">
-                            <h3 className="footer-logo"><span>X</span>-Market</h3>
+                            <h3 className="footer-logo"><span>Cat-z</span></h3>
                             <p>Your premium destination for quality products with an immersive shopping experience.</p>
                             <div className="social-links">
                                 <a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -51,7 +51,7 @@ const Footer = () => {
                             <ul className="contact-info">
                                 <li><i className="fas fa-map-marker-alt"></i> 123 Market Street, NY 10001</li>
                                 <li><i className="fas fa-phone"></i> +1 (555) 123-4567</li>
-                                <li><i className="fas fa-envelope"></i> support@x-market.com</li>
+                                <li><i className="fas fa-envelope"></i> support@cat-z.com</li>
                                 <li><i className="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
                             </ul>
                         </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <div className="container">
                     <div className="footer-bottom-content">
-                        <p>&copy; 2024 X-Market. All Rights Reserved.</p>
+                        <p>&copy; 2024 Cat-z. All Rights Reserved.</p>
                         <div className="payment-methods">
                             <i className="fab fa-cc-visa"></i>
                             <i className="fab fa-cc-mastercard"></i>

@@ -1,7 +1,7 @@
 /* Cart Page Styles */
 .cart-page {
     min-height: 100vh;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .cart-main {
@@ -19,7 +19,7 @@
 .page-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 2rem;
 }
 
@@ -42,7 +42,7 @@
 
 .empty-cart-content h2 {
     font-size: 1.75rem;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.75rem;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .cart-items {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -70,7 +70,7 @@
     gap: 1.5rem;
     align-items: center;
     padding: 1.5rem 0;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #374151;
 }
 
 .cart-item:last-of-type {
@@ -82,7 +82,7 @@
     height: 100px;
     border-radius: 1rem;
     overflow: hidden;
-    background: #f9fafb;
+    background: #0f172a;
 }
 
 .item-image img {
@@ -99,7 +99,7 @@
 
 .item-name {
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     text-decoration: none;
 }
 
@@ -122,7 +122,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background: #f3f4f6;
+    background: #334155;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -131,7 +131,7 @@
     width: 32px;
     height: 32px;
     border: none;
-    background: #fff;
+    background: #1e293b;
     border-radius: 0.25rem;
     cursor: pointer;
     font-size: 1rem;
@@ -152,7 +152,7 @@
 .item-total {
     font-weight: 700;
     font-size: 1.125rem;
-    color: #1f2937;
+    color: #f3f4f6;
     min-width: 80px;
     text-align: right;
 }
@@ -177,7 +177,7 @@
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background: none;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 0.5rem;
     color: #6b7280;
     cursor: pointer;
@@ -190,7 +190,7 @@
 }
 
 .cart-summary {
-    background: #fff;
+    background: #1e293b;
     border-radius: 1.5rem;
     padding: 2rem;
     height: fit-content;
@@ -202,7 +202,7 @@
 .cart-summary h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 1.5rem;
 }
 
@@ -210,15 +210,15 @@
     display: flex;
     justify-content: space-between;
     padding: 0.75rem 0;
-    border-bottom: 1px solid #e5e7eb;
-    color: #4b5563;
+    border-bottom: 1px solid #374151;
+    color: #d1d5db;
 }
 
 .summary-row.total {
     border-bottom: none;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-top: 0.5rem;
 }
 

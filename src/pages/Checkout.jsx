@@ -12,8 +12,8 @@ const Checkout = () => {
     const [orderPlaced, setOrderPlaced] = useState(false);
 
     const subtotal = getCartTotal();
-    const shipping = subtotal > 50 ? 0 : 9.99;
-    const tax = subtotal * 0.08;
+    const shipping = subtotal > 2000 ? 0 : 199;
+    const tax = subtotal * 0.18;
     const total = subtotal + shipping + tax;
 
     const handleSubmit = (e) => {
@@ -110,7 +110,7 @@ const Checkout = () => {
                                             <div key={item.id} className="review-item">
                                                 <img src={item.image} alt={item.name} />
                                                 <div><h4>{item.name}</h4><p>Qty: {item.quantity}</p></div>
-                                                <span>${(item.price * item.quantity).toFixed(2)}</span>
+                                                <span>₹{(item.price * item.quantity).toFixed(2)}</span>
                                             </div>
                                         ))}
                                     </div>
@@ -123,10 +123,10 @@ const Checkout = () => {
                         </form>
                         <div className="order-summary">
                             <h2>Order Summary</h2>
-                            <div className="summary-row"><span>Subtotal</span><span>${subtotal.toFixed(2)}</span></div>
-                            <div className="summary-row"><span>Shipping</span><span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span></div>
-                            <div className="summary-row"><span>Tax</span><span>${tax.toFixed(2)}</span></div>
-                            <div className="summary-row total"><span>Total</span><span>${total.toFixed(2)}</span></div>
+                            <div className="summary-row"><span>Subtotal</span><span>₹{subtotal.toFixed(2)}</span></div>
+                            <div className="summary-row"><span>Shipping</span><span>{shipping === 0 ? 'FREE' : `₹${shipping.toFixed(2)}`}</span></div>
+                            <div className="summary-row"><span>Tax</span><span>₹{tax.toFixed(2)}</span></div>
+                            <div className="summary-row total"><span>Total</span><span>₹{total.toFixed(2)}</span></div>
                         </div>
                     </div>
                 </div>

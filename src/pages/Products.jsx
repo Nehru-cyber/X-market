@@ -9,7 +9,7 @@ import './Products.css';
 const Products = () => {
     const [searchParams] = useSearchParams();
     const [sortBy, setSortBy] = useState('featured');
-    const [priceRange, setPriceRange] = useState([0, 3000]);
+    const [priceRange, setPriceRange] = useState([0, 5000]);
 
     const categoryFilter = searchParams.get('category');
     const filterType = searchParams.get('filter');
@@ -81,49 +81,7 @@ const Products = () => {
                     </div>
 
                     <div className="products-layout">
-                        <aside className="products-filters">
-                            <div className="filter-section">
-                                <h3>Categories</h3>
-                                <ul className="filter-list">
-                                    <li><a href="/products" className={!categoryFilter ? 'active' : ''}>All</a></li>
-                                    {categories.map(cat => (
-                                        <li key={cat}>
-                                            <a href={`/products?category=${cat}`} className={categoryFilter === cat ? 'active' : ''}>
-                                                {cat}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
 
-                            <div className="filter-section">
-                                <h3>Price Range</h3>
-                                <div className="price-inputs">
-                                    <input
-                                        type="number"
-                                        value={priceRange[0]}
-                                        onChange={(e) => setPriceRange([parseInt(e.target.value) || 0, priceRange[1]])}
-                                        placeholder="Min"
-                                    />
-                                    <span>to</span>
-                                    <input
-                                        type="number"
-                                        value={priceRange[1]}
-                                        onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value) || 3000])}
-                                        placeholder="Max"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="filter-section">
-                                <h3>Quick Filters</h3>
-                                <div className="quick-filters">
-                                    <a href="/products?filter=sale" className={`filter-chip ${filterType === 'sale' ? 'active' : ''}`}>On Sale</a>
-                                    <a href="/products?filter=new" className={`filter-chip ${filterType === 'new' ? 'active' : ''}`}>New Arrivals</a>
-                                    <a href="/products?filter=bestseller" className={`filter-chip ${filterType === 'bestseller' ? 'active' : ''}`}>Best Sellers</a>
-                                </div>
-                            </div>
-                        </aside>
 
                         <div className="products-content">
                             {filteredProducts.length > 0 ? (

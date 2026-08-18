@@ -1,7 +1,7 @@
 /* Home Page Styles */
 .home-page {
     min-height: 100vh;
-    background: #fff;
+    background: #1e293b;
 }
 
 /* Hero Section */
@@ -250,18 +250,21 @@
     font-weight: 700;
 }
 
+
 /* Container */
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 /* Features Section */
 .features-section {
-    padding: 4rem 0;
-    background: #f9fafb;
+    padding: 3rem 0;
+    background: #0f172a;
 }
 
 .features-grid {
@@ -271,7 +274,7 @@
 }
 
 .feature-card {
-    background: #fff;
+    background: #1e293b;
     padding: 2rem;
     border-radius: 1.5rem;
     text-align: center;
@@ -301,7 +304,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #1f2937;
+    color: #f3f4f6;
 }
 
 .feature-card p {
@@ -318,7 +321,7 @@
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #f3f4f6;
     margin-bottom: 0.75rem;
 }
 
@@ -329,7 +332,7 @@
 
 /* Categories Section */
 .categories-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .categories-grid {
@@ -391,8 +394,8 @@
 
 /* Products Section */
 .products-section {
-    padding: 5rem 0;
-    background: #f9fafb;
+    padding: 3rem 0;
+    background: #0f172a;
 }
 
 .product-tabs {
@@ -405,7 +408,7 @@
 .tab-btn {
     padding: 0.75rem 1.5rem;
     background: transparent;
-    border: 2px solid #e5e7eb;
+    border: 2px solid #374151;
     border-radius: 2rem;
     font-weight: 500;
     color: #6b7280;
@@ -434,7 +437,7 @@
 
 /* Deals Section */
 .deals-section {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .deals-banner {
@@ -495,7 +498,7 @@
 
 /* Newsletter Section */
 .newsletter-section {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background: #1f2937;
     color: #fff;
 }
